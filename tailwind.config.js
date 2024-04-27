@@ -19,6 +19,9 @@ export default {
           300: "#F8F8F8",
         },
       },
+      fontFamily: {
+        suit: ["SUIT-Regular", "sans-serif"],
+      },
     },
   },
   plugins: [],
