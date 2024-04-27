@@ -3,6 +3,7 @@ import { Provider } from "jotai";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import ScrollToTop from "../components/ScrollToTop";
 import Header from "../components/organisms/Header";
+import Footer from "../components/organisms/Footer";
 
 function Layout() {
   const queryClient = new QueryClient();
@@ -16,7 +17,7 @@ function Layout() {
           <main>
             <Outlet />
           </main>
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </Provider>
     </QueryClientProvider>
