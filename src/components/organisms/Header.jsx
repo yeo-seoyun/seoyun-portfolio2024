@@ -8,9 +8,18 @@ function Header() {
         <span className="font-bold text-black-100">SEOYUN`S WEB PORTFOLIO</span>
       </button>
       <div className="text-xl flex items-center justify-between gap-5">
-        <a href="#home">HOME</a>
-        <a href="#about-me">ABOUT ME</a>
-        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#home" className="hover:text-purple-100 transition-all">
+          HOME
+        </a>
+        <a href="#about-me" className="hover:text-purple-100 transition-all">
+          ABOUT ME
+        </a>
+        <a href="#portfolio" className="hover:text-purple-100 transition-all">
+          PORTFOLIO
+        </a>
+        <a href="#design" className="hover:text-purple-100 transition-all">
+          DESIGN
+        </a>
       </div>
     </header>
   );

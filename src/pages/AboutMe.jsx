@@ -42,7 +42,7 @@ function AboutMe() {
               <br />
               <Link
                 to=""
-                className="flex items-center gap-1 hover:text-pulple-100 transition-all"
+                className="flex items-center gap-1 hover:text-purple-100 transition-all"
               >
                 <FontAwesomeIcon icon={faAngleRight} className="text-sm" />
                 <span>자기소개 더보기</span>

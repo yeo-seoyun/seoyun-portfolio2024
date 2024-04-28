@@ -20,7 +20,7 @@ export default {
           400: "#666666",
           500: "#C5C5C5",
         },
-        pulple: {
+        purple: {
           100: "#a8afd8",
         },
       },
