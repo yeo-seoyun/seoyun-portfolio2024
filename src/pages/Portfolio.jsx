@@ -1,19 +1,38 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+
 function Portfolio() {
   return (
-    <>
-      <div
-        id="portfolio"
-        className="w-full h-screen p-20 flex flex-col justify-between gap-10"
+    <div
+      id="portfolio"
+      className="w-full h-screen p-20 flex flex-col justify-center gap-10"
+    >
+      <h2 className="text-5xl font-bold">PORTFOLIO</h2>
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={3}
+        // centeredSlides={true}
+        loop={true}
+        navigation
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+        className="w-full m-auto bg-blue-200"
       >
-        <h2 className="text-5xl font-bold">PORTFOLIO</h2>
-        <div className="w-full h-full flex">
-          <div className="w-[580px] h-[430px] bg-pink-100">dd</div>
-          <div className="w-[580px] h-[430px] bg-pink-200">dd</div>
-          <div className="w-[580px] h-[430px] bg-pink-300">dd</div>
-          <div className="w-[580px] h-[430px] bg-pink-400">dd</div>
-        </div>
-      </div>
-    </>
+        <SwiperSlide>
+          <div className="bg-pink-400 w-[580px] h-[430px]">Slide 1</div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="bg-pink-400 w-[580px] h-[430px]">Slide 2</div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="bg-pink-400 w-[580px] h-[430px]">Slide 3</div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="bg-pink-400 w-[580px] h-[430px]">Slide 4</div>
+        </SwiperSlide>
+      </Swiper>
+    </div>
   );
 }
 
