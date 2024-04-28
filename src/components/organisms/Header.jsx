@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import syLogo from "/seoyun-logo.svg";
 
 function Header() {
@@ -8,10 +7,10 @@ function Header() {
         <img src={syLogo} className="w-14 h-14" alt="Seoyun logo" />
         <span className="font-bold text-black-100">SEOYUN`S WEB PORTFOLIO</span>
       </button>
-      <div className="font-suit text-xl flex items-center justify-between gap-5">
-        <Link to="">HOME</Link>
-        <Link to="">ABOUT ME</Link>
-        <Link to="">PORTFOLIO</Link>
+      <div className="text-xl flex items-center justify-between gap-5">
+        <a href="#home">HOME</a>
+        <a href="#about-me">ABOUT ME</a>
+        <a href="#portfolio">PORTFOLIO</a>
       </div>
     </header>
   );
