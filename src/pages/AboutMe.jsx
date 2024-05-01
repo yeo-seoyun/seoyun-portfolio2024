@@ -16,7 +16,7 @@ function AboutMe() {
     <>
       <div
         id="about-me"
-        className="w-full h-screen p-20 flex flex-col justify-between gap-10"
+        className="w-full h-screen py-10 px-20 flex flex-col justify-between gap-10"
       >
         <h2 className="text-5xl font-bold">ABOUT ME</h2>
         <div className="w-full h-full flex flex-col gap-5 m-auto">
@@ -31,7 +31,7 @@ function AboutMe() {
               <p>
                 안녕하세요! 신입 웹 퍼블리셔 여서윤입니다. <br />
                 모든 사용자가 웹사이트를 편리하게 사용할 수 있도록
-                <br /> 웹 표준과 웹 접근성을 준수하는 작업을 합니다.
+                <br /> 웹 표준과 웹 접근성을 준수하는 작업을 위해 노력합니다.
               </p>
               <p>
                 프로젝트의 목적을 우선하면서 원활한 협업을 중요시하고,

@@ -27,7 +27,7 @@ function Main() {
             className="flex items-center gap-2"
           >
             <img src={github} alt="깃허브" className="w-4 h-4" />
-            <span>Github</span>
+            <span className="hover:translate-x-3 transition-all">Github</span>
           </Link>
           <Link
             to="https://www.notion.so/chou-chou-world-17ed5220eaaf4ba2ae784b790f5b1e7d?pvs=4"
@@ -35,7 +35,7 @@ function Main() {
             className="flex items-center gap-2"
           >
             <img src={notion} alt="노션" className="w-4 h-4" />
-            <span>Notion</span>
+            <span className="hover:translate-x-3 transition-all">Notion</span>
           </Link>
         </div>
         <div className="flex flex-col items-center gap-2">

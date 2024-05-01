@@ -1,36 +1,75 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
+import PortfolioSlide from "../components/molecule/PortfolioSlide";
+import nonfiction from "../assets/MockUp/nonfiction-mockup.png";
 
 function Portfolio() {
   return (
     <div
       id="portfolio"
-      className="w-full h-screen p-20 flex flex-col justify-center gap-10"
+      className="w-full h-screen py-10 px-20 flex flex-col justify-center gap-10"
     >
       <h2 className="text-5xl font-bold">PORTFOLIO</h2>
       <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
+        spaceBetween={0}
+        slidesPerView={1}
         // centeredSlides={true}
         loop={true}
-        navigation
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }}
+        pagination={{
+          clickable: true,
+          dynamicBullets: true,
+        }}
+        modules={[Navigation, Pagination]}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        className="w-full m-auto bg-blue-200"
+        className="w-full h-full m-auto"
       >
         <SwiperSlide>
-          <div className="bg-pink-400 w-[580px] h-[430px]">Slide 1</div>
+          <PortfolioSlide
+            title="NON FICTION"
+            imgSrc={nonfiction}
+            imgAlt="논픽션 반응형 홈페이지 이미지"
+            description="Web | 논픽션 반응형 홈페이지"
+            detailLink="/non-fiction"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-pink-400 w-[580px] h-[430px]">Slide 2</div>
+          <PortfolioSlide
+            title="MIMI WORLD"
+            imgSrc={nonfiction}
+            imgAlt="미미월드 반응형 홈페이지 이미지"
+            description="Web | 미미월드 반응형 홈페이지"
+            detailLink="/non-fiction"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-pink-400 w-[580px] h-[430px]">Slide 3</div>
+          <PortfolioSlide
+            title="MUZIGAE MANSION"
+            imgSrc={nonfiction}
+            imgAlt="무지개맨션 반응형 홈페이지 이미지"
+            description="Web | 무지개맨션 반응형 홈페이지"
+            detailLink="/non-fiction"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-pink-400 w-[580px] h-[430px]">Slide 4</div>
+          <PortfolioSlide
+            title="NON FICTION"
+            imgSrc={nonfiction}
+            imgAlt="논픽션 반응형 홈페이지 이미지"
+            description="Web | 논픽션 반응형 홈페이지"
+            detailLink="/non-fiction"
+          />
         </SwiperSlide>
+
+        <div className="swiper-button-prev text-black-100"></div>
+        <div className="swiper-button-next text-black-100"></div>
       </Swiper>
     </div>
   );
