@@ -1,3 +1,4 @@
+import Mimiworld from "../pages/DetailPage/Mimiworld";
 import Nonfiction from "../pages/DetailPage/Nonfiction";
 import Home from "../pages/Home";
 
@@ -16,7 +17,13 @@ const navigationItems = [
     index: true,
     text: "논픽션",
     element: <Nonfiction />,
-    // lazy: () => import("@/pages/Home"),
+  },
+  {
+    id: "mimiworld",
+    path: "/mimiworld",
+    index: true,
+    text: "미미월드",
+    element: <Mimiworld />,
   },
 ];
 

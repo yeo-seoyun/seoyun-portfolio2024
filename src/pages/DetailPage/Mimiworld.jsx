@@ -5,7 +5,7 @@ import react from "../../assets/react.svg";
 import tailwind from "../../assets/tailwind.svg";
 import Project from "../../components/molecule/Project";
 
-function Nonfiction() {
+function Mimiworld() {
   const skills = [
     { name: "HTML", image: html },
     { name: "CSS", image: css },
@@ -18,8 +18,8 @@ function Nonfiction() {
     <>
       <div className="w-full p-20">
         <Project
-          title="논픽션 반응형 홈페이지"
-          description="논픽션 홈페이지를 반응형으로"
+          title="미미월드 반응형 홈페이지"
+          description="미미월드 홈페이지를 반응형으로"
           contribution="100"
           skills={skills}
         />
@@ -29,4 +29,4 @@ function Nonfiction() {
   );
 }
 
-export default Nonfiction;
+export default Mimiworld;

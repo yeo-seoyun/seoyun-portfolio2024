@@ -50,7 +50,7 @@ function Portfolio() {
             imgSrc={mimiworld}
             imgAlt="미미월드 반응형 홈페이지 이미지"
             description="Web | 미미월드 반응형 홈페이지"
-            detailLink="/non-fiction"
+            detailLink="/mimiworld"
           />
         </SwiperSlide>
         <SwiperSlide>
