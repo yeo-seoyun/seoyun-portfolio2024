@@ -6,6 +6,7 @@ import { A11y, Keyboard, Navigation, Pagination } from "swiper/modules";
 import PortfolioSlide from "../components/molecule/PortfolioSlide";
 import nonfiction from "../assets/MockUp/nonfiction-mockup.png";
 import mimiworld from "../assets/MockUp/mimi-mockup.png";
+import muzigae from "../assets/MockUp/muzigae-mockup.png";
 
 function Portfolio() {
   return (
@@ -55,13 +56,13 @@ function Portfolio() {
         <SwiperSlide>
           <PortfolioSlide
             title="MUZIGAE MANSION"
-            imgSrc={nonfiction}
+            imgSrc={muzigae}
             imgAlt="무지개맨션 반응형 홈페이지 이미지"
             description="Web | 무지개맨션 반응형 홈페이지"
             detailLink="/non-fiction"
           />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <PortfolioSlide
             title="NON FICTION"
             imgSrc={nonfiction}
@@ -69,7 +70,7 @@ function Portfolio() {
             description="Web | 논픽션 반응형 홈페이지"
             detailLink="/non-fiction"
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
 
         <div className="swiper-button-prev text-black-100"></div>
         <div className="swiper-button-next text-black-100"></div>
