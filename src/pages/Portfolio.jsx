@@ -41,7 +41,7 @@ function Portfolio() {
             imgSrc={nonfiction}
             imgAlt="논픽션 반응형 홈페이지 이미지"
             description="Web | 논픽션 반응형 홈페이지"
-            detailLink="/non-fiction"
+            detailLink="/nonfiction"
           />
         </SwiperSlide>
         <SwiperSlide>
