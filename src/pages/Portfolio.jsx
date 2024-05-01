@@ -2,9 +2,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
+import { A11y, Keyboard, Navigation, Pagination } from "swiper/modules";
 import PortfolioSlide from "../components/molecule/PortfolioSlide";
 import nonfiction from "../assets/MockUp/nonfiction-mockup.png";
+import mimiworld from "../assets/MockUp/mimi-mockup.png";
 
 function Portfolio() {
   return (
@@ -18,15 +19,17 @@ function Portfolio() {
         slidesPerView={1}
         // centeredSlides={true}
         loop={true}
+        keyboard={{
+          enabled: true,
+        }}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
         pagination={{
-          clickable: true,
-          dynamicBullets: true,
+          type: "fraction",
         }}
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, Keyboard, A11y]}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         className="w-full h-full m-auto"
@@ -43,7 +46,7 @@ function Portfolio() {
         <SwiperSlide>
           <PortfolioSlide
             title="MIMI WORLD"
-            imgSrc={nonfiction}
+            imgSrc={mimiworld}
             imgAlt="미미월드 반응형 홈페이지 이미지"
             description="Web | 미미월드 반응형 홈페이지"
             detailLink="/non-fiction"
