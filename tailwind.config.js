@@ -43,6 +43,9 @@ export default {
         "size-50": "50%",
         "size-75": "75%",
       },
+      boxShadow: {
+        default: "0px 2px 15px -2px rgba(0, 0, 0, 0.09)",
+      },
     },
   },
   plugins: [],

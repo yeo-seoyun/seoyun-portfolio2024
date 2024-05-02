@@ -1,4 +1,5 @@
 import Mimiworld from "../pages/DetailPage/Mimiworld";
+import Muzigae from "../pages/DetailPage/Muzigae";
 import Nonfiction from "../pages/DetailPage/Nonfiction";
 import Home from "../pages/Home";
 
@@ -24,6 +25,13 @@ const navigationItems = [
     index: true,
     text: "미미월드",
     element: <Mimiworld />,
+  },
+  {
+    id: "muzigaemansion",
+    path: "/muzigaemansion",
+    index: true,
+    text: "무지개맨션",
+    element: <Muzigae />,
   },
 ];
 

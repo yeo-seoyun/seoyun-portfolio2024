@@ -59,7 +59,7 @@ function Portfolio() {
             imgSrc={muzigae}
             imgAlt="무지개맨션 반응형 홈페이지 이미지"
             description="Web | 무지개맨션 반응형 홈페이지"
-            detailLink="/non-fiction"
+            detailLink="/muzigaemansion"
           />
         </SwiperSlide>
         {/* <SwiperSlide>
