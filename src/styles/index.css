@@ -10,4 +10,24 @@
   line-height: 1.5;
   font-weight: 400;
   user-select: none;
+
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eaebf5; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c9cff3; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #c6c6c6; 
 }
