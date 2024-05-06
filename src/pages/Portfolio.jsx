@@ -14,7 +14,7 @@ function Portfolio() {
       id="portfolio"
       className="w-full h-screen py-10 px-20 flex flex-col justify-center gap-10"
     >
-      <h2 className="text-5xl font-bold">PORTFOLIO</h2>
+      <h2 className="text-5xl font-bold">PORTFOLIO-WEB</h2>
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
