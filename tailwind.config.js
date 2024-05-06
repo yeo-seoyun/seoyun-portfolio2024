@@ -37,7 +37,7 @@ export default {
         slide: "slide 30s linear infinite",
       },
       backgroundImage: {
-        seoyun: "url('src/assets/yeoseoyun.svg')",
+        seoyun: "url('/yeoseoyun.svg')",
       },
       backgroundSize: {
         "size-50": "50%",
