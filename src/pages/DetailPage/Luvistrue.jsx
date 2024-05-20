@@ -5,7 +5,7 @@ import react from "../../assets/react.svg";
 import tailwind from "../../assets/tailwind.svg";
 import pocketbase from "../../assets/pocketbase.svg";
 import Project from "../../components/molecule/Project";
-import desktopGif from "../../assets/Detail/luvistruegif.gif";
+import desktopGif from "../../assets/Detail/luvistruegif.webp";
 import tabletGif from "../../assets/Detail/luvistrue-tb.webp";
 import mobileGif from "../../assets/Detail/luvistrue-mb.webp";
 import DetailLink from "../../components/atom/DetailLink";
