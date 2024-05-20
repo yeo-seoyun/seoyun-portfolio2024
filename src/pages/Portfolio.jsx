@@ -7,6 +7,7 @@ import PortfolioSlide from "../components/molecule/PortfolioSlide";
 import nonfiction from "../assets/MockUp/nonfiction-mockup.png";
 import mimiworld from "../assets/MockUp/mimi-mockup.png";
 import muzigae from "../assets/MockUp/muzigae-mockup.png";
+import luvistrue from "../assets/MockUp/luv-mockup.png";
 
 function Portfolio() {
   return (
@@ -62,15 +63,15 @@ function Portfolio() {
             detailLink="/muzigaemansion"
           />
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <PortfolioSlide
-            title="NON FICTION"
-            imgSrc={nonfiction}
-            imgAlt="논픽션 반응형 홈페이지 이미지"
-            description="Web | 논픽션 반응형 홈페이지"
-            detailLink="/non-fiction"
+            title="LUV IS TRUE"
+            imgSrc={luvistrue}
+            imgAlt="러브이즈트루 반응형 홈페이지 이미지"
+            description="Web | 러브이즈트루 반응형 홈페이지"
+            detailLink="/luvistrue"
           />
-        </SwiperSlide> */}
+        </SwiperSlide>
 
         <div className="swiper-button-prev text-black-100"></div>
         <div className="swiper-button-next text-black-100"></div>

@@ -40,13 +40,13 @@ function AboutMe() {
                 희망합니다.
               </p>
               <br />
-              <Link
+              {/* <Link
                 to=""
                 className="flex items-center gap-1 hover:text-purple-100 transition-all"
               >
                 <FontAwesomeIcon icon={faAngleRight} className="text-sm" />
                 <span>자기소개 더보기</span>
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="w-[90%] flex flex-col items-center m-auto space-y-10">

@@ -14,28 +14,28 @@ function Design() {
         <h2 className="text-5xl font-bold">PORTFOLIO-DESIGN</h2>
         <div className="w-full h-full grid grid-cols-3 gap-8">
           <DesignCard
-            title="서윤 이니셜 로고"
+            title="INITIALL LOGO"
             imgSrc={sylogo}
             imgAlt="서윤 이니셜로고"
-            detailLink="/"
+            detailLink="/initiallogo"
           />
           <DesignCard
             title="FITTING BLUSH BANNER"
             imgSrc={muzigae}
             imgAlt="피팅블러셔 배너"
-            detailLink="/"
+            detailLink="/fittingblushbanner"
           />
           <DesignCard
             title="HANDCRAM BANNER"
             imgSrc={dalba}
             imgAlt="핸드크림 배너"
-            detailLink="/"
+            detailLink="/handcreambanner"
           />
           <DesignCard
-            title="BLUESQUARE UI/UX"
+            title="UI/UX | BLUE SQUARE MOBILE "
             imgSrc={bluesquare}
-            imgAlt="블루스퀘어 ui/ux"
-            detailLink="/"
+            imgAlt="블루스퀘어 모바일 ui/ux"
+            detailLink="/bluesquare"
           />
         </div>
       </div>

@@ -12,7 +12,7 @@ function Footer() {
             <h2 className="text-xl">CONTACT</h2>
             <div className="space-y-1">
               <p className="text-2xl text-black-100">
-                열정적인 웹 퍼블리셔를 찾고계신가요?
+                열정적인 웹 퍼블리셔를 찾고계신다면!
               </p>
               <p>
                 항상 끈임없이 노력하는 여서윤 입니다. <br /> 언제든지
