@@ -25,7 +25,7 @@ function Nonfiction() {
   return (
     <>
       <div className="w-full py-28">
-        <div className="max-w-[1440px] flex flex-col items-center justify-center m-auto gap-20">
+        <div className="max-w-[1280px] flex flex-col items-center justify-center m-auto gap-20">
           <div className="w-full flex flex-col items-center gap-5">
             <Project
               title="논픽션 반응형 홈페이지"
@@ -68,38 +68,38 @@ function Nonfiction() {
 
           <div className="w-full flex flex-col items-center gap-10">
             <h2 className="text-2xl">작업 화면</h2>
-            <ul className="w-full h-[50vh] flex items-center justify-between gap-4">
-              <li className="h-full flex flex-col gap-3 items-center">
-                <div className="h-full flex items-center">
-                  <img
-                    src={desktopGif}
-                    alt="논픽션 gif"
-                    className="h-full rounded-xl shadow-default border"
-                  />
-                </div>
-                <span>Desktop ver</span>
-              </li>
-              <li className="h-full flex flex-col gap-3 items-center">
-                <div className="h-full flex items-center">
-                  <img
-                    src={tabletGif}
-                    alt="논픽션 테블릿 gif"
-                    className="h-full rounded-xl shadow-default border"
-                  />
-                </div>
-                <span>Tablet ver</span>
-              </li>
-              <li className="h-full flex flex-col gap-3 items-center">
-                <div className="h-full flex items-center">
-                  <img
-                    src={mobileGif}
-                    alt="논픽션 모바일 gif"
-                    className="h-full rounded-xl shadow-default border"
-                  />
-                </div>
-                <span>Mobile ver</span>
-              </li>
-            </ul>
+            <div className="w-full h-[50vh] flex items-center justify-around gap-2">
+              <div className="h-full flex flex-col items-center relative">
+                <img
+                  src={desktopGif}
+                  alt="논픽션 gif"
+                  className="h-full rounded-xl shadow-default border"
+                />
+                <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-full">
+                  Desktop ver
+                </span>
+              </div>
+              <div className="h-full flex flex-col items-center relative">
+                <img
+                  src={tabletGif}
+                  alt="논픽션 테블릿 gif"
+                  className="h-full rounded-xl shadow-default border"
+                />
+                <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-full">
+                  Teblet ver
+                </span>
+              </div>
+              <div className="h-full flex flex-col items-center relative">
+                <img
+                  src={mobileGif}
+                  alt="논픽션 모바일 gif"
+                  className="h-full rounded-xl shadow-default border"
+                />
+                <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-full">
+                  Mobile ver
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
