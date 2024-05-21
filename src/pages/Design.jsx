@@ -9,10 +9,10 @@ function Design() {
     <>
       <div
         id="design"
-        className="w-full h-[130vh] py-10 px-20 flex flex-col justify-center gap-10"
+        className="w-[90%] h-[150vh] m-auto py-10 flex flex-col justify-between items-center"
       >
-        <h2 className="text-5xl font-bold">PORTFOLIO-DESIGN</h2>
-        <div className="w-full h-full grid grid-cols-3 gap-8">
+        <h2 className="text-5xl font-bold">UI/UX DESIGN</h2>
+        <div className="w-[1280px] h-full grid grid-cols-3 gap-8 mt-5">
           <DesignCard
             title="INITIALL LOGO"
             imgSrc={sylogo}

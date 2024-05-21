@@ -1,4 +1,5 @@
 import DetailLink from "../atom/DetailLink";
+import Skill from "../atom/Skills";
 
 function Project({ title, contribution, skills, link, githubLink }) {
   return (
@@ -17,16 +18,7 @@ function Project({ title, contribution, skills, link, githubLink }) {
           <span className="ftext-gray-100">|</span>
           <div className="flex items-center gap-1">
             {skills.map((skill) => (
-              <div key={skill.name} className="relative group w-6 h-6">
-                <img
-                  src={skill.image}
-                  alt={skill.name}
-                  className="w-full h-full"
-                />
-                <span className="absolute left-1/2 transform -translate-x-1/2 top-full mb-2 px-2 py-1 text-xs opacity-0 group-hover:opacity-100">
-                  {skill.name}
-                </span>
-              </div>
+              <Skill key={skill.name} image={skill.image} name={skill.name} />
             ))}
           </div>
         </div>

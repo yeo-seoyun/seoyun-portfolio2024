@@ -13,9 +13,9 @@ function Portfolio() {
   return (
     <div
       id="portfolio"
-      className="w-full h-screen py-10 px-20 flex flex-col justify-center gap-10"
+      className="w-[90%] h-screen m-auto py-10 flex flex-col justify-between items-center"
     >
-      <h2 className="text-5xl font-bold">PORTFOLIO-WEB</h2>
+      <h2 className="text-5xl font-bold">PORTFOLIO</h2>
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
@@ -34,7 +34,7 @@ function Portfolio() {
         modules={[Navigation, Pagination, Keyboard, A11y]}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        className="w-full h-full m-auto"
+        className="w-[1280px] h-[90%] m-auto"
       >
         <SwiperSlide>
           <PortfolioSlide
