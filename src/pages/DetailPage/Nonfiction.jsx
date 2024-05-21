@@ -5,7 +5,6 @@ import react from "../../assets/react.svg";
 import tailwind from "../../assets/tailwind.svg";
 import pocketbase from "../../assets/pocketbase.svg";
 import vite from "../../assets/vite.svg";
-import Project from "../../components/molecule/Project";
 import safari from "../../assets/MockUp/nonfiction-Safari.png";
 import desktopGif from "../../assets/Detail/nonfictiongif.webp";
 import tabletGif from "../../assets/Detail/nonfiction-tb.gif";

@@ -5,14 +5,14 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 function Footer() {
   return (
     <>
-      <footer className="w-full h-[50vh] flex flex-col justify-center items-center gap-10 bg-gray-300">
+      <footer className="w-full h-[55vh] flex flex-col justify-center items-center gap-10 bg-gray-300">
         <div className="w-[70%] flex items-center justify-evenly">
           <img src={hi} alt="인사하는 아바타" className="w-[30%]" />
           <div className="space-y-4 text-gray-400">
             <h2 className="text-xl">CONTACT</h2>
             <div className="space-y-1">
-              <p className="text-2xl text-black-100">
-                열정적인 웹 퍼블리셔를 찾고계신다면!
+              <p className="text-xl text-black-100">
+                열정적인 웹 퍼블리셔 &amp; 프론트엔드
               </p>
               <p>
                 항상 끈임없이 노력하는 여서윤 입니다. <br /> 언제든지
