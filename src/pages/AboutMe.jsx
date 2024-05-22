@@ -7,6 +7,8 @@ import tailwind from "../assets/tailwind.svg";
 import photoshop from "../assets/photoshop.svg";
 import illustrator from "../assets/Illustrator.svg";
 import figma from "../assets/figma.svg";
+import github from "../assets/github.svg";
+import notion from "../assets/notion.svg";
 import Skill from "../components/atom/Skills";
 // import { Link } from "react-router-dom";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,6 +24,8 @@ function AboutMe() {
     { name: "Photoshop", image: photoshop },
     { name: "Illustrator", image: illustrator },
     { name: "Figma", image: figma },
+    { name: "Github", image: github },
+    { name: "Notion", image: notion },
   ];
 
   return (
@@ -94,7 +98,7 @@ function AboutMe() {
               <h2 className="text-xl text-white flex-1 border px-2 rounded-full bg-purple-100 bg-opacity-75">
                 SKILLS&amp;TOOLS
               </h2>
-              <div className="flex gap-2 flex-1 ml-1">
+              <div className="grid grid-cols-5 gap-x-2 gap-y-7 ml-1">
                 {skills.map((skill) => (
                   <Skill
                     key={skill.name}

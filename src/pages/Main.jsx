@@ -11,7 +11,7 @@ function Main() {
     <>
       <div
         id="home"
-        className="bg-seoyun bg-repeat-x bg-center bg-fixed bg-size-50 animate-slide w-full h-screen p-20 flex flex-col items-center justify-center space-y-10"
+        className="bg-seoyun bg-repeat-x bg-center bg-fixed bg-size-50 animate-slide w-full h-screen flex flex-col items-center justify-center space-y-10"
       >
         <div className="flex  items-center">
           <img src={avatar} alt="서윤 아바타" />
