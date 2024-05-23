@@ -3,17 +3,17 @@ import Skill from "../atom/Skills";
 
 function Project({ title, contribution, skills, link, githubLink }) {
   return (
-    <div className="flex flex-col items-center gap-10">
-      <div className="flex flex-col items-center gap-5">
+    <div className="w-full flex flex-col items-center gap-6 sm:gap-4">
+      <div className="flex flex-col items-center gap-3">
         <div className="flex flex-col items-center gap-1">
-          <p className="flex gap-2 text-lg text-gray-400 sm:text-base">
+          <p className="flex gap-2 text-lg text-gray-400 sm:text-xs">
             <span>Web | publishing</span>
             <span>기여도 {contribution}%</span>
           </p>
-          <h2 className="text-4xl sm:text-2xl">{title}</h2>
+          <h2 className="text-4xl sm:text-xl">{title}</h2>
         </div>
 
-        <div className="w-full flex items-center justify-around">
+        <div className="w-full flex items-center justify-around sm:text-xs sm:gap-2">
           <p>SKILLS</p>
           <span className="ftext-gray-100">|</span>
           <div className="flex items-center gap-1">

@@ -10,13 +10,13 @@ function ProjectTitleDesign({ title, designContribution, description }) {
           <span>Design</span>
           <span>기여도 {designContribution}%</span>
         </p>
-        <h2 className="text-4xl sm:text-xl">{title}</h2>
+        <h2 className="text-center text-4xl sm:text-xl">{title}</h2>
       </div>
-      {descriptionLines.map((line, index) => (
-        <p key={index} className="-my-3">
-          {line}
-        </p>
-      ))}
+      <div className="-my-3 text-center sm:text-sm">
+        {descriptionLines.map((line, index) => (
+          <p key={index}>{line}</p>
+        ))}
+      </div>
     </div>
   );
 }

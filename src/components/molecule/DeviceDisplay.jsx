@@ -6,7 +6,7 @@ function DeviceDisplay({ src, alt, version, className }) {
         alt={alt}
         className="h-full rounded-xl shadow-default border sm:w-full"
       />
-      <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-full md:hidden sm:hidden">
+      <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-full sm:text-xs whitespace-nowrap">
         {version}
       </span>
     </div>

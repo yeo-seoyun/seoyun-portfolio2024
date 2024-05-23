@@ -14,7 +14,7 @@ function ProjectTitle({
     .map((line) => line.trim());
 
   return (
-    <div className="w-full flex flex-col items-center gap-10">
+    <div className="w-full h-full flex flex-col items-center gap-6">
       <Project
         title={title}
         contribution={contribution}
@@ -22,14 +22,14 @@ function ProjectTitle({
         link={link}
         githubLink={githubLink}
       />
-      <div className="mb-8">
-        <img src={projectImage} alt={title} className="h-full" />
+
+      <img src={projectImage} alt={title} className="w-[70%] sm:w-full" />
+
+      <div className="-my-5 text-center sm:text-base sm:text-start sm:px-2">
+        {descriptionLines.map((line, index) => (
+          <p key={index}>{line}</p>
+        ))}
       </div>
-      {descriptionLines.map((line, index) => (
-        <p key={index} className="-my-5 sm:text-lg">
-          {line}
-        </p>
-      ))}
     </div>
   );
 }
