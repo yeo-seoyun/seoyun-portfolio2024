@@ -13,7 +13,7 @@ function Main() {
         id="home"
         className="bg-seoyun bg-repeat-x bg-center bg-fixed bg-size-50 animate-slide w-full h-screen flex flex-col items-center justify-center space-y-10"
       >
-        <div className="flex  items-center">
+        <div className="flex items-center sm:w-[70%]">
           <img src={avatar} alt="서윤 아바타" />
         </div>
         <div className="space-y-1">

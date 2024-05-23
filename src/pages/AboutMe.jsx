@@ -32,16 +32,20 @@ function AboutMe() {
     <>
       <div
         id="about-me"
-        className="w-[90%] h-screen m-auto py-10 flex flex-col justify-between items-center"
+        className="w-[90%] h-screen m-auto py-10 flex flex-col justify-between items-center sm:h-[60vh] sm:gap-6"
       >
-        <h2 className="text-5xl font-bold text-center">ABOUT ME</h2>
-        <div className="w-[1280px] h-[90%] flex flex-col items-center justify-around gap-16">
-          <div className="w-[90%] flex items-center justify-evenly m-auto text-lg">
+        <h2 className="text-5xl font-bold text-center sm:text-2xl">ABOUT ME</h2>
+        <div className="w-[1280px] h-[90%] flex flex-col items-center justify-around gap-16 md:w-[768px] md:gap-4 sm:w-[320px] sm:gap-2">
+          <div className="w-[90%] flex items-center justify-evenly m-auto text-lg md:flex-col md:gap-4 sm:flex-col sm:w-full sm:gap-4">
             <div>
-              <img src={selfie} alt="html" className="rounded-full" />
+              <img
+                src={selfie}
+                alt="html"
+                className="rounded-full sm:w-[70%] sm:m-auto"
+              />
             </div>
-            <div className="space-y-4">
-              <h2 className="text-2xl">
+            <div className="space-y-4 md:space-y-2 md:text-center sm:text-sm sm:space-y-2">
+              <h2 className="text-2xl sm:text-xl">
                 여서윤<span className="text-sm">YeoSeoYun</span>
               </h2>
               <p>
@@ -50,7 +54,7 @@ function AboutMe() {
                 모든 사용자가 웹사이트를 편리하게 사용할 수 있도록
                 <br /> 웹 표준과 웹 접근성을 준수하는 작업을 위해 노력합니다.
               </p>
-              <p>
+              <p className="sm:hidden">
                 프로젝트의 목적을 우선하면서 원활한 협업을 중요시하고,
                 <br />
                 팀원과의 의견 교환을 소중히 하고, 배려 깊은 환경에서 일하기를
@@ -66,7 +70,7 @@ function AboutMe() {
               </Link> */}
             </div>
           </div>
-          <div className="w-[90%] flex items-start justify-evenly m-auto">
+          <div className="w-[90%] flex items-start justify-evenly m-auto sm:hidden">
             <div className="flex flex-col items-start justify-center gap-3">
               <div>
                 <h2 className="text-xl text-white flex-1 border px-2 rounded-full bg-purple-100 bg-opacity-75">

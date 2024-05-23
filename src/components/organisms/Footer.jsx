@@ -5,13 +5,13 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 function Footer() {
   return (
     <>
-      <footer className="w-full h-[55vh] flex flex-col justify-center items-center gap-10 bg-gray-300">
-        <div className="w-[70%] flex items-center justify-evenly">
-          <img src={hi} alt="인사하는 아바타" className="w-[30%]" />
-          <div className="space-y-4 text-gray-400">
-            <h2 className="text-xl">CONTACT</h2>
+      <footer className="w-full h-[55vh] flex flex-col justify-center items-center gap-10 bg-gray-300 md:h-[30vh] sm:gap-4">
+        <div className="w-[70%] flex items-center justify-evenly sm:flex-col sm:gap-3 sm:text-center">
+          <img src={hi} alt="인사하는 아바타" className="w-[30%] sm:w-[40%]" />
+          <div className="space-y-4 text-gray-400 sm:space-y-2">
+            <h2 className="text-xl sm:text-lg">CONTACT</h2>
             <div className="space-y-1">
-              <p className="text-xl text-black-100">
+              <p className="text-xl text-black-100 sm:text-base">
                 열정적인 웹 퍼블리셔 &amp; 프론트엔드
               </p>
               <p>
@@ -29,11 +29,11 @@ function Footer() {
                 <span>syunn94@naver.com</span>
               </p>
             </div>
-            <p className="text-xl">Thank you for watching..❤️</p>
+            <p className="text-xl sm:text-base">Thank you for watching..❤️</p>
           </div>
         </div>
         <div>
-          <p className="text-gray-100">
+          <p className="text-gray-100 sm:text-sm">
             Made by Seoyun. © 2024 All rights reserved
           </p>
         </div>

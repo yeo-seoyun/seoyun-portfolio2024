@@ -26,7 +26,7 @@ function ProjectTitle({
         <img src={projectImage} alt={title} className="h-full" />
       </div>
       {descriptionLines.map((line, index) => (
-        <p key={index} className="-my-5">
+        <p key={index} className="-my-5 sm:text-lg">
           {line}
         </p>
       ))}

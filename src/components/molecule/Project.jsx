@@ -6,11 +6,11 @@ function Project({ title, contribution, skills, link, githubLink }) {
     <div className="flex flex-col items-center gap-10">
       <div className="flex flex-col items-center gap-5">
         <div className="flex flex-col items-center gap-1">
-          <p className="flex gap-2 text-lg text-gray-400">
+          <p className="flex gap-2 text-lg text-gray-400 sm:text-base">
             <span>Web | publishing</span>
             <span>기여도 {contribution}%</span>
           </p>
-          <h2 className="text-4xl">{title}</h2>
+          <h2 className="text-4xl sm:text-2xl">{title}</h2>
         </div>
 
         <div className="w-full flex items-center justify-around">

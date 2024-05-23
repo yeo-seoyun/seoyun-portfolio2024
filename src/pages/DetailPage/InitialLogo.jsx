@@ -6,7 +6,7 @@ import ProjectTitleDesign from "../../components/atom/ProjectTitleDesign";
 function InitialLogo() {
   return (
     <>
-      <div className="w-full py-28 flex flex-col m-auto gap-28">
+      <div className="w-full py-28 flex flex-col m-auto gap-28 md:w-[768px] sm:w-[320px] sm:gap-14">
         <ProjectTitleDesign
           title="INITIAL LOGO DESIGN"
           designContribution="100"

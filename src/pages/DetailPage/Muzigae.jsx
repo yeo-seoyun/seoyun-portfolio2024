@@ -10,6 +10,7 @@ import desktopGif from "../../assets/Detail/muzigaegif.webp";
 import tabletGif from "../../assets/Detail/muzigae-tb.gif";
 import mobileGif from "../../assets/Detail/muzigae-mb.gif";
 import ProjectTitle from "../../components/atom/ProjectTitle";
+import DeviceDisplay from "../../components/molecule/DeviceDisplay";
 
 function Muzigae() {
   const skills = [
@@ -25,7 +26,7 @@ function Muzigae() {
   return (
     <>
       <div className="w-full py-28">
-        <div className="max-w-[1280px] flex flex-col items-center justify-center m-auto gap-20">
+        <div className="max-w-[1280px] flex flex-col items-center justify-center m-auto gap-20 md:w-[768px] sm:w-[320px]">
           <div className="w-full flex flex-col items-center gap-10">
             <ProjectTitle
               title="무지개맨션 반응형 홈페이지"
@@ -58,37 +59,25 @@ function Muzigae() {
 
           <div className="w-full flex flex-col items-center gap-10">
             <h2 className="text-2xl">작업 화면</h2>
-            <div className="w-full h-[50vh] flex items-center justify-around gap-2">
-              <div className="h-full flex flex-col items-center relative">
-                <img
-                  src={desktopGif}
-                  alt="무지개맨션 gif"
-                  className="h-full rounded-xl shadow-default border"
-                />
-                <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-full">
-                  Desktop ver
-                </span>
-              </div>
-              <div className="h-full flex flex-col items-center relative">
-                <img
-                  src={tabletGif}
-                  alt="무지개맨션 테블릿 gif"
-                  className="h-full rounded-xl shadow-default border"
-                />
-                <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-full">
-                  Teblet ver
-                </span>
-              </div>
-              <div className="h-full flex flex-col items-center relative">
-                <img
-                  src={mobileGif}
-                  alt="무지개맨션 모바일 gif"
-                  className="h-full rounded-xl shadow-default border"
-                />
-                <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-full">
-                  Mobile ver
-                </span>
-              </div>
+            <div className="w-full h-[50vh] flex items-center justify-around gap-2 md:h-[25vh] sm:h-[55vh] sm:grid sm:grid-cols-3 sm:gap-y-10 sm:gap-x-5">
+              <DeviceDisplay
+                src={desktopGif}
+                alt="무지개 gif"
+                version="Desktop ver"
+                className="sm:col-span-3"
+              />
+              <DeviceDisplay
+                src={tabletGif}
+                alt="무지개 테블릿 gif"
+                version="Tablet ver"
+                className="sm:col-span-2"
+              />
+              <DeviceDisplay
+                src={mobileGif}
+                alt="무지개 모바일 gif"
+                version="Mobile ver"
+                className="sm:col-span-1"
+              />
             </div>
           </div>
         </div>
