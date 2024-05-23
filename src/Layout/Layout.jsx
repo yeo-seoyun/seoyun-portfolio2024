@@ -11,14 +11,12 @@ function Layout() {
   return (
     <QueryClientProvider client={queryClient}>
       <Provider>
-        <div className="w-full h-full">
-          <Header />
-          <ScrollToTop />
-          <main>
-            <Outlet />
-          </main>
-          <Footer />
-        </div>
+        <Header />
+        <ScrollToTop />
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
       </Provider>
     </QueryClientProvider>
   );

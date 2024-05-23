@@ -3,11 +3,7 @@ import DetailLink from "../atom/DetailLink";
 function DesignCard({ title, imgSrc, imgAlt, detailLink }) {
   return (
     <>
-      <div
-        className="w-full h-full flex flex-col items-center justify-between gap-3 group overflow-hidden
-      
-      "
-      >
+      <div className="w-full h-full flex flex-col items-center justify-between gap-3 group overflow-hidden">
         <img
           src={imgSrc}
           alt={imgAlt}
