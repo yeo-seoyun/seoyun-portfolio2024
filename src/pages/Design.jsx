@@ -9,7 +9,7 @@ function Design() {
   return (
     <>
       <div id="design" className="w-full h-full m-auto md:h-full sm:h-full">
-        <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center gap-10 py-8 px-10">
+        <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center gap-10 py-8 px-10 md:w-[768px]">
           <h2 className="text-4xl font-bold sm:text-2xl">UI/UX DESIGN</h2>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -20,7 +20,7 @@ function Design() {
               duration: 2,
               y: { duration: 1 },
             }}
-            className="w-full h-full grid grid-cols-2 gap-8 md:w-[768px] md:grid-cols-2 sm:w-[320px] sm:grid-cols-1"
+            className="w-full h-full grid grid-cols-2 gap-8 sm:w-[320px] sm:grid-cols-1"
           >
             <DesignCard
               title="INITIALL LOGO"

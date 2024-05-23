@@ -38,25 +38,25 @@ function AboutMe() {
         id="about-me"
         className="w-full h-screen m-auto sm:h-[60vh] sm:gap-6"
       >
-        <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center gap-10 py-8 px-10">
+        <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center gap-10 py-8 px-10 md:w-[768px] bg-pink-200">
           <h2 className="text-4xl font-bold text-center sm:text-2xl">
             ABOUT ME
           </h2>
-          <div className="w-full h-full flex items-center justify-around gap-8 md:w-[768px] sm:w-[320px]">
+          <div className="w-full h-full flex items-center justify-around gap-8 md:flex-col md:gap-4 bg-fuchsia-100">
             <motion.div
-              initial={{ opacity: 0, x: 0 }}
-              whileInView={{ opacity: 1, x: 50 }}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false }}
               transition={{
                 ease: "easeInOut",
                 duration: 2,
                 x: { duration: 1 },
               }}
-              className="h-full flex flex-col items-start justify-center gap-5 m-auto text-lg md:flex-col md:gap-4 sm:flex-col sm:w-full sm:gap-4"
+              className="h-full flex flex-col items-start justify-center gap-5 m-auto text-lg bg-slate-300 md:items-center"
             >
-              <img src={selfie} alt="html" className="sm:w-[70%] sm:m-auto" />
-              <div className="space-y-2 md:space-y-2 md:text-center sm:text-sm sm:space-y-2">
-                <h2 className="text-2xl sm:text-xl">
+              <img src={selfie} alt="서윤 사진" />
+              <div className="space-y-2 sm:text-sm sm:space-y-2">
+                <h2 className="text-2xl sm:text-sm">
                   여서윤 <span className="text-sm">YeoSeoYun</span>
                 </h2>
                 <p>
@@ -73,15 +73,15 @@ function AboutMe() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, rotateY: 180 }}
+              whileInView={{ opacity: 1, rotateY: 0 }}
               viewport={{ once: false }}
               transition={{
                 ease: "easeInOut",
                 duration: 2,
-                x: { duration: 1 },
+                rotateY: { duration: 1 },
               }}
-              className="h-full flex flex-col items-start justify-center gap-10 m-auto sm:hidden"
+              className="h-full flex flex-col items-start justify-center gap-10 m-auto md:gap-3 sm:hidden"
             >
               <div className="flex flex-col items-start justify-center gap-3">
                 <h2 className="text-lg text-white border px-2 rounded-full bg-purple-100 bg-opacity-75">

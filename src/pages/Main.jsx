@@ -22,7 +22,7 @@ function Main() {
         id="home"
         className="w-full h-screen bg-seoyun bg-repeat-x bg-center bg-fixed bg-size-50 animate-slide"
       >
-        <div className="w-[1280px] h-full flex flex-col m-auto items-center justify-center gap-8">
+        <div className="w-[1280px] h-full flex flex-col m-auto items-center justify-center gap-8 md:w-[768px] md:m-auto">
           <img src={currentImage} alt="서윤 아바타" className="sm:w-[70%]" />
           <div className="text-2xl text-center">
             <p>WELCOME</p>

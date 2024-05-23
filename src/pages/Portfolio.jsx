@@ -16,10 +16,10 @@ function Portfolio() {
       id="portfolio"
       className="w-full h-screen m-auto md:h-[60vh] sm:h-[60vh]"
     >
-      <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center py-8 px-10">
+      <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center py-8 px-10 md:w-[768px]">
         <h2 className="text-4xl font-bold sm:text-2xl">PORTFOLIO</h2>
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false }}
           transition={{
@@ -27,7 +27,7 @@ function Portfolio() {
             duration: 2,
             y: { duration: 1 },
           }}
-          className="w-full h-full m-auto md:w-[768px] sm:w-[320px]"
+          className="w-full h-full bg-fuchsia-400"
         >
           <Swiper
             spaceBetween={0}

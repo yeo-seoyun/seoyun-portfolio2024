@@ -16,10 +16,14 @@ function Footer() {
             duration: 2,
             y: { duration: 1 },
           }}
-          className="w-[1280px] flex items-center justify-evenly"
+          className="w-[1280px] flex items-center justify-evenly md:w-[768px]"
         >
-          <img src={hi} alt="인사하는 아바타" className="sm:w-[40%]" />
-          <div className="space-y-4 text-gray-400 sm:space-y-2">
+          <img
+            src={hi}
+            alt="인사하는 아바타"
+            className="md:w-[30%] sm:w-[40%]"
+          />
+          <div className="space-y-4 text-gray-400 md:space-y-3 sm:space-y-2">
             <h2 className="text-xl sm:text-lg">CONTACT</h2>
             <div className="space-y-1">
               <p className="text-xl text-black-100 sm:text-base">
