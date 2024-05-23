@@ -9,7 +9,7 @@ function DesignCard({ title, imgSrc, imgAlt, detailLink }) {
           alt={imgAlt}
           className="rounded-xl w-full h-full group-hover:drop-shadow-md transition-all"
         />
-        <h2 className="text-xl">{title}</h2>
+        <h2 className="text-xl sm:text-sm">{title}</h2>
         <DetailLink to={detailLink}>자세히 보기</DetailLink>
       </div>
     </>

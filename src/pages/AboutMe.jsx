@@ -34,15 +34,12 @@ function AboutMe() {
 
   return (
     <>
-      <div
-        id="about-me"
-        className="w-full h-screen m-auto sm:h-[60vh] sm:gap-6"
-      >
-        <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center gap-10 py-8 px-10 md:w-[768px] bg-pink-200">
+      <div id="about-me" className="w-full h-screen m-auto sm:gap-6">
+        <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center gap-10 py-8 px-10 md:w-[768px] sm:w-[320px] sm:px-0 sm:gap-5">
           <h2 className="text-4xl font-bold text-center sm:text-2xl">
             ABOUT ME
           </h2>
-          <div className="w-full h-full flex items-center justify-around gap-8 md:flex-col md:gap-4 bg-fuchsia-100">
+          <div className="w-full h-full flex items-center justify-around gap-8 md:flex-col md:gap-4 sm:flex-col sm:gap-3 sm:items-start">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -52,7 +49,7 @@ function AboutMe() {
                 duration: 2,
                 x: { duration: 1 },
               }}
-              className="h-full flex flex-col items-start justify-center gap-5 m-auto text-lg bg-slate-300 md:flex-row md:items-center md:gap-2"
+              className="h-full flex flex-col items-start justify-center gap-5 m-auto text-lg md:flex-row md:items-center md:gap-2"
             >
               <img src={selfie} alt="서윤 사진" className="md:w-[40%]" />
               <div className="space-y-2  sm:text-sm">
@@ -81,10 +78,10 @@ function AboutMe() {
                 duration: 2,
                 rotateY: { duration: 1 },
               }}
-              className="h-full flex flex-col items-start justify-center gap-10 m-auto md:gap-3 sm:hidden"
+              className="h-full flex flex-col items-start justify-center gap-10 m-auto md:gap-3 sm:gap-2 sm:m-0"
             >
               <div className="flex flex-col items-start justify-center gap-3">
-                <h2 className="text-lg text-white border px-2 rounded-full bg-purple-100 bg-opacity-75">
+                <h2 className="text-lg text-white border px-2 rounded-full bg-purple-100 bg-opacity-75 sm:text-sm">
                   CONTACT
                 </h2>
 
@@ -124,7 +121,7 @@ function AboutMe() {
                   </li>
                 </ul>
               </div>
-              <div className="flex flex-col items-start justify-center gap-3">
+              <div className="flex flex-col items-start justify-center gap-3 sm:hidden">
                 <h2 className="text-lg text-white border px-2 rounded-full bg-purple-100 bg-opacity-75">
                   ADUCATION
                 </h2>
@@ -151,7 +148,7 @@ function AboutMe() {
                 </ul>
               </div>
               <div className="flex flex-col items-start justify-center gap-3">
-                <h2 className="text-lg text-white flex-1 border px-2 rounded-full bg-purple-100 bg-opacity-75">
+                <h2 className="text-lg text-white flex-1 border px-2 rounded-full bg-purple-100 bg-opacity-75 sm:text-sm">
                   SKILLS&amp;TOOLS
                 </h2>
                 <div className="flex gap-x-2 gap-y-7 ml-2">
