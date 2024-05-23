@@ -52,10 +52,10 @@ function AboutMe() {
                 duration: 2,
                 x: { duration: 1 },
               }}
-              className="h-full flex flex-col items-start justify-center gap-5 m-auto text-lg bg-slate-300 md:items-center"
+              className="h-full flex flex-col items-start justify-center gap-5 m-auto text-lg bg-slate-300 md:flex-row md:items-center md:gap-2"
             >
-              <img src={selfie} alt="서윤 사진" />
-              <div className="space-y-2 sm:text-sm sm:space-y-2">
+              <img src={selfie} alt="서윤 사진" className="md:w-[40%]" />
+              <div className="space-y-2  sm:text-sm">
                 <h2 className="text-2xl sm:text-sm">
                   여서윤 <span className="text-sm">YeoSeoYun</span>
                 </h2>
