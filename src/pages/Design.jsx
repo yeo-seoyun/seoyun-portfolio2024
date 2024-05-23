@@ -3,14 +3,25 @@ import muzigae from "../assets/MockUp/muzigae.webp";
 import dalba from "../assets/MockUp/dalba.webp";
 import bluesquare from "../assets/MockUp/bluesquare.webp";
 import DesignCard from "../components/molecule/DesignCard";
+import { motion } from "framer-motion";
 
 function Design() {
   return (
     <>
       <div id="design" className="w-full h-full m-auto md:h-full sm:h-full">
         <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center gap-10 py-8 px-10">
-          <h2 className="text-5xl font-bold sm:text-2xl">UI/UX DESIGN</h2>
-          <div className="w-full h-full grid grid-cols-2 gap-8 md:w-[768px] md:grid-cols-2 sm:w-[320px] sm:grid-cols-1">
+          <h2 className="text-4xl font-bold sm:text-2xl">UI/UX DESIGN</h2>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{
+              ease: "easeInOut",
+              duration: 2,
+              y: { duration: 1 },
+            }}
+            className="w-full h-full grid grid-cols-2 gap-8 md:w-[768px] md:grid-cols-2 sm:w-[320px] sm:grid-cols-1"
+          >
             <DesignCard
               title="INITIALL LOGO"
               imgSrc={sylogo}
@@ -35,7 +46,7 @@ function Design() {
               imgAlt="블루스퀘어 모바일 ui/ux"
               detailLink="/bluesquare"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

@@ -13,6 +13,7 @@ import Skill from "../components/atom/Skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 // import { Link } from "react-router-dom";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
@@ -38,11 +39,21 @@ function AboutMe() {
         className="w-full h-screen m-auto sm:h-[60vh] sm:gap-6"
       >
         <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center gap-10 py-8 px-10">
-          <h2 className="text-5xl font-bold text-center sm:text-2xl">
+          <h2 className="text-4xl font-bold text-center sm:text-2xl">
             ABOUT ME
           </h2>
           <div className="w-full h-full flex items-center justify-around gap-8 md:w-[768px] sm:w-[320px]">
-            <div className="h-full flex flex-col items-start justify-center gap-5 m-auto text-lg md:flex-col md:gap-4 sm:flex-col sm:w-full sm:gap-4">
+            <motion.div
+              initial={{ opacity: 0, x: 0 }}
+              whileInView={{ opacity: 1, x: 50 }}
+              viewport={{ once: false }}
+              transition={{
+                ease: "easeInOut",
+                duration: 2,
+                x: { duration: 1 },
+              }}
+              className="h-full flex flex-col items-start justify-center gap-5 m-auto text-lg md:flex-col md:gap-4 sm:flex-col sm:w-full sm:gap-4"
+            >
               <img src={selfie} alt="html" className="sm:w-[70%] sm:m-auto" />
               <div className="space-y-2 md:space-y-2 md:text-center sm:text-sm sm:space-y-2">
                 <h2 className="text-2xl sm:text-xl">
@@ -59,9 +70,19 @@ function AboutMe() {
                   일하기를 희망합니다.
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="h-full flex flex-col items-start justify-center gap-10 m-auto sm:hidden">
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{
+                ease: "easeInOut",
+                duration: 2,
+                x: { duration: 1 },
+              }}
+              className="h-full flex flex-col items-start justify-center gap-10 m-auto sm:hidden"
+            >
               <div className="flex flex-col items-start justify-center gap-3">
                 <h2 className="text-lg text-white border px-2 rounded-full bg-purple-100 bg-opacity-75">
                   CONTACT
@@ -143,7 +164,7 @@ function AboutMe() {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
