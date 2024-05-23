@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 function Design() {
   return (
     <>
-      <div id="design" className="w-full h-full m-auto sm:h-full">
+      <div id="design" className="w-full h-auto">
         <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center gap-10 py-8 px-10 md:w-[768px]">
           <h2 className="text-4xl font-bold sm:text-2xl">UI/UX DESIGN</h2>
           <motion.div
@@ -20,7 +20,7 @@ function Design() {
               duration: 2,
               y: { duration: 1 },
             }}
-            className="w-full h-full grid grid-cols-2 gap-8 sm:w-[320px] sm:grid-cols-1"
+            className="w-full h-full grid grid-cols-2 gap-8"
           >
             <DesignCard
               title="INITIALL LOGO"
