@@ -1,13 +1,13 @@
 import DetailLink from "../atom/DetailLink";
 
-function PortfolioSlide({ title, imgSrc, imgAlt, description, detailLink }) {
+function PortfolioContent({ title, imgSrc, imgAlt, description, detailLink }) {
   return (
     <>
-      <div className="w-full h-full flex flex-col m-auto items-center justify-center gap-3">
+      <div className="w-[90%] h-full m-auto flex flex-col items-center justify-center gap-3 border pb-3 rounded-2xl overflow-hidden">
         <img
           src={imgSrc}
           alt={imgAlt}
-          className="w-[63%] rounded-xl md:w-full sm:w-full"
+          className="w-full h-[390px] object-cover"
         />
         <div className="flex flex-col items-center">
           <h2 className="text-2xl text-center sm:text-lg">{title}</h2>
@@ -19,4 +19,4 @@ function PortfolioSlide({ title, imgSrc, imgAlt, description, detailLink }) {
   );
 }
 
-export default PortfolioSlide;
+export default PortfolioContent;
