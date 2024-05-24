@@ -34,7 +34,10 @@ function AboutMe() {
 
   return (
     <>
-      <div id="about-me" className="w-full h-screen m-auto sm:gap-6">
+      <div
+        id="about-me"
+        className="w-full h-screen m-auto relative bg-white sm:gap-6"
+      >
         <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center gap-10 py-8 px-10 md:w-[768px] sm:w-[320px] sm:px-0 sm:gap-5">
           <h2 className="text-4xl font-bold text-center sm:text-2xl">
             ABOUT ME

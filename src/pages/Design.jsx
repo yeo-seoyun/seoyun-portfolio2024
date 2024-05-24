@@ -7,7 +7,7 @@ import DesignCard from "../components/molecule/DesignCard";
 function Design() {
   return (
     <>
-      <div id="design" className="w-full h-auto">
+      <div id="design" className="w-full h-auto relative bg-white">
         <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center gap-10 py-8 px-10 md:w-[768px] sm:w-[320px] sm:px-0">
           <h2 className="text-4xl font-bold sm:text-2xl">UI/UX DESIGN</h2>
           <div className="w-full h-full grid grid-cols-2 gap-8 sm:grid-cols-1">

@@ -21,7 +21,7 @@ function Header() {
 
       {isHomePage && (
         <div className="text-lg flex items-center justify-between gap-5 md:text-base sm:text-sm">
-          <a href="#home" className="hover:text-purple-100 transition-all">
+          <a href="#none" className="hover:text-purple-100 transition-all">
             HOME
           </a>
           <a href="#about-me" className="hover:text-purple-100 transition-all">
