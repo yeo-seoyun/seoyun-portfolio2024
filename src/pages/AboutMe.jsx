@@ -44,7 +44,7 @@ function AboutMe() {
           </h2>
           <div className="w-full h-full flex items-center justify-around gap-8 md:flex-col md:gap-2 sm:flex-col sm:gap-3 sm:items-start">
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
+              initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false }}
               transition={{
@@ -73,15 +73,15 @@ function AboutMe() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: 0 }}
-              whileInView={{ opacity: 1, x: -30 }}
+              initial={{ opacity: 0.7, x: 0 }}
+              whileInView={{ opacity: 1, x: -40 }}
               viewport={{ once: false }}
               transition={{
                 ease: "easeInOut",
                 duration: 2,
                 x: { duration: 1 },
               }}
-              className="h-full flex flex-col items-start justify-center gap-10 m-auto md:gap-3 sm:gap-2 sm:m-0"
+              className="h-full flex flex-col items-start justify-center gap-10 m-auto md:gap-3 sm:gap-2"
             >
               <div className="flex flex-col items-start justify-center gap-3">
                 <h2 className="text-lg text-white border px-2 rounded-full bg-purple-100 bg-opacity-75 sm:text-sm">
