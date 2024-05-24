@@ -5,6 +5,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import Header from "../components/organisms/Header";
 import Footer from "../components/organisms/Footer";
 import GoToTop from "../components/GoToTop";
+// import CustomCursor from "../components/organisms/CustomCursor";
 
 function Layout() {
   const queryClient = new QueryClient();
@@ -12,6 +13,7 @@ function Layout() {
   return (
     <QueryClientProvider client={queryClient}>
       <Provider>
+        {/* <CustomCursor /> */}
         <Header />
         <ScrollToTop />
         <main>
