@@ -5,11 +5,9 @@ import { useEffect, useState } from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 function Main() {
-  const { scrollYProgress } = useViewportScroll(); // 스크롤 진행 상태를 가져옴
+  const { scrollYProgress } = useViewportScroll(); // 스크롤 진행 상태
   const [currentImage, setCurrentImage] = useState(avatar);
-
-  // opacity를 스크롤 위치에 따라 조정
-  const opacity = useTransform(scrollYProgress, [0, 0.25], [1, 0.1]);
+  const opacity = useTransform(scrollYProgress, [0, 0.25], [1, 0.1]); // opacity를 스크롤 위치에 따라 조정
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,7 +22,7 @@ function Main() {
   return (
     <>
       <motion.div
-        style={{ opacity }} // 여기에 opacity 스타일 적용
+        style={{ opacity }}
         className="w-full h-screen bg-seoyun bg-repeat-x bg-center bg-fixed bg-size-50 animate-slide sticky top-0"
       >
         <div className="w-[1280px] h-full flex flex-col m-auto items-center justify-center gap-8 md:w-[768px] md:m-auto sm:w-[320px]">
@@ -35,7 +33,17 @@ function Main() {
           </div>
           <div className="flex flex-col items-center gap-2">
             <p className="text-sm text-gray-500">Scroll Down</p>
-            <img src={mouse} alt="스크롤" />
+            <motion.img
+              src={mouse}
+              alt="스크롤"
+              initial={{ y: 0 }}
+              animate={{ y: 10 }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "reverse",
+                duration: 1,
+              }}
+            />
           </div>
         </div>
       </motion.div>

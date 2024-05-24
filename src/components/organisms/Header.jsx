@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import syLogo from "/seoyun-logo.svg";
+import syLogo from "/assets/seoyun-logo.svg";
 
 function Header() {
   const location = useLocation();
@@ -21,9 +21,6 @@ function Header() {
 
       {isHomePage && (
         <div className="text-lg flex items-center justify-between gap-5 md:text-base sm:text-sm">
-          <a href="#none" className="hover:text-purple-100 transition-all">
-            HOME
-          </a>
           <a href="#about-me" className="hover:text-purple-100 transition-all">
             ABOUT ME
           </a>

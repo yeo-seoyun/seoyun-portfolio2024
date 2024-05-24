@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import ScrollToTop from "../components/ScrollToTop";
 import Header from "../components/organisms/Header";
 import Footer from "../components/organisms/Footer";
+import GoToTop from "../components/GoToTop";
 
 function Layout() {
   const queryClient = new QueryClient();
@@ -17,6 +18,7 @@ function Layout() {
           <Outlet />
         </main>
         <Footer />
+        <GoToTop />
       </Provider>
     </QueryClientProvider>
   );
