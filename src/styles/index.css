@@ -38,3 +38,7 @@
 .swiper-button-next:after {
   font-size: 25px;
 }
+
+.swiper-pagination {
+  text-align: end;
+}

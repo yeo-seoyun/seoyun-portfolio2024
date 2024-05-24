@@ -17,68 +17,66 @@ function Portfolio() {
     >
       <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center py-8  md:w-[768px] sm:w-[320px] sm:px-0">
         <h2 className="text-4xl font-bold sm:text-2xl">PORTFOLIO</h2>
-        <div className="w-full h-full">
-          <Swiper
-            spaceBetween={0}
-            slidesPerView={1}
-            // centeredSlides={true}
-            loop={true}
-            keyboard={{
-              enabled: true,
-            }}
-            navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            }}
-            pagination={{
-              type: "fraction",
-            }}
-            modules={[Navigation, Pagination, Keyboard, A11y]}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-            className="w-full h-full"
-          >
-            <SwiperSlide>
-              <PortfolioSlide
-                title="NON FICTION"
-                imgSrc={nonfiction}
-                imgAlt="논픽션 반응형 홈페이지 이미지"
-                description="Web | 논픽션 반응형 홈페이지"
-                detailLink="/nonfiction"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PortfolioSlide
-                title="MIMI WORLD"
-                imgSrc={mimiworld}
-                imgAlt="미미월드 반응형 홈페이지 이미지"
-                description="Web | 미미월드 반응형 홈페이지"
-                detailLink="/mimiworld"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PortfolioSlide
-                title="MUZIGAE MANSION"
-                imgSrc={muzigae}
-                imgAlt="무지개맨션 반응형 홈페이지 이미지"
-                description="Web | 무지개맨션 반응형 홈페이지"
-                detailLink="/muzigaemansion"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <PortfolioSlide
-                title="LUV IS TRUE"
-                imgSrc={luvistrue}
-                imgAlt="러브이즈트루 반응형 홈페이지 이미지"
-                description="Web | 러브이즈트루 반응형 홈페이지"
-                detailLink="/luvistrue"
-              />
-            </SwiperSlide>
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={1}
+          // centeredSlides={true}
+          loop={true}
+          keyboard={{
+            enabled: true,
+          }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          pagination={{
+            type: "fraction",
+          }}
+          modules={[Navigation, Pagination, Keyboard, A11y]}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+          className="w-full h-full"
+        >
+          <SwiperSlide>
+            <PortfolioSlide
+              title="NON FICTION"
+              imgSrc={nonfiction}
+              imgAlt="논픽션 반응형 홈페이지 이미지"
+              description="Web | 논픽션 반응형 홈페이지"
+              detailLink="/nonfiction"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioSlide
+              title="MIMI WORLD"
+              imgSrc={mimiworld}
+              imgAlt="미미월드 반응형 홈페이지 이미지"
+              description="Web | 미미월드 반응형 홈페이지"
+              detailLink="/mimiworld"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioSlide
+              title="MUZIGAE MANSION"
+              imgSrc={muzigae}
+              imgAlt="무지개맨션 반응형 홈페이지 이미지"
+              description="Web | 무지개맨션 반응형 홈페이지"
+              detailLink="/muzigaemansion"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioSlide
+              title="LUV IS TRUE"
+              imgSrc={luvistrue}
+              imgAlt="러브이즈트루 반응형 홈페이지 이미지"
+              description="Web | 러브이즈트루 반응형 홈페이지"
+              detailLink="/luvistrue"
+            />
+          </SwiperSlide>
 
-            <div className="swiper-button-prev text-black-100 sm:hidden"></div>
-            <div className="swiper-button-next text-black-100 sm:hidden"></div>
-          </Swiper>
-        </div>
+          <div className="swiper-button-prev text-black-100 sm:hidden"></div>
+          <div className="swiper-button-next text-black-100 sm:hidden"></div>
+        </Swiper>
       </div>
     </div>
   );
