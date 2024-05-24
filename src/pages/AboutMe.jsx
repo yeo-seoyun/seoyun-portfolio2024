@@ -39,7 +39,7 @@ function AboutMe() {
           <h2 className="text-4xl font-bold text-center sm:text-2xl">
             ABOUT ME
           </h2>
-          <div className="w-full h-full flex items-center justify-around gap-8 md:flex-col md:gap-4 sm:flex-col sm:gap-3 sm:items-start">
+          <div className="w-full h-full flex items-center justify-around gap-8 md:flex-col md:gap-2 sm:flex-col sm:gap-3 sm:items-start">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -70,13 +70,13 @@ function AboutMe() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, rotateY: 180 }}
-              whileInView={{ opacity: 1, rotateY: 0 }}
+              initial={{ opacity: 0, x: 0 }}
+              whileInView={{ opacity: 1, x: -30 }}
               viewport={{ once: false }}
               transition={{
                 ease: "easeInOut",
                 duration: 2,
-                rotateY: { duration: 1 },
+                x: { duration: 1 },
               }}
               className="h-full flex flex-col items-start justify-center gap-10 m-auto md:gap-3 sm:gap-2 sm:m-0"
             >
