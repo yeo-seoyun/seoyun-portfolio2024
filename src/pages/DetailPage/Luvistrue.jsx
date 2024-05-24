@@ -34,7 +34,9 @@ function Luvistrue() {
             link="https://luvisstrue.netlify.app"
             githubLink="https://github.com/yeo-seoyun/luvistrue"
             projectImage={safari}
-            description="React와 Vite를 기반으로 Tailwind CSS를 사용하여 반응형 디자인을 구현했습니다. <br /> PocketBase를 통해 실시간 데이터 연동 및 상품 리스트의 동적 구성을 지원합니다. <br /> 주요 기능으로는 상품 목록, 상세 페이지, 검색 및 필터링 기능이 있으며, <br /> 사용자 친화적인 인터페이스를 구현하기 위해 노력했습니다."
+            description="React, Vite, 그리고 Tailwind CSS를 활용하여 기존 사이트의 디자인과 기능을 최대한 재현하면서, <br /> 
+            현대적인 웹 개발 표준과 반응형 디자인을 지원하는 사이트를 개발하는 것을 목표로 합니다. <br />
+            현재 메인 페이지의 기능 구현을 완료한 후, 추가적으로 사용자 인증 기능을 포함한 로그인 및 회원가입 기능을 개발할 예정입니다."
           />
 
           <div className="w-full border-b"></div>
@@ -43,13 +45,13 @@ function Luvistrue() {
             <h2 className="text-2xl sm:text-lg">주요 기능 및 특징</h2>
             <ul className="sm:text-sm">
               <li className="flex sm:flex-col">
-                <p className="font-bold">✔️ 반응형 디자인:</p>{" "}
+                <p className="font-bold">✔️ Tailwind CSS & 반응형 디자인:</p>{" "}
                 <p className="sm:ml-6 ml-1">
                   다양한 디바이스에서 일관된 사용자 경험 제공
                 </p>
               </li>
               <li className="flex sm:flex-col">
-                <p className="font-bold">✔️ 실시간 데이터 연동:</p>{" "}
+                <p className="font-bold">✔️ PocketBase & 실시간 데이터 연동:</p>{" "}
                 <p className="sm:ml-6 ml-1">
                   PocketBase를 통한 최신 상품 정보 제공
                 </p>
@@ -57,12 +59,6 @@ function Luvistrue() {
               <li className="flex sm:flex-col">
                 <p className="font-bold">✔️ 상품 목록 및 상세 페이지:</p>{" "}
                 <p className="sm:ml-6 ml-1">제품 정보의 상세한 제공</p>
-              </li>
-              <li className="flex sm:flex-col">
-                <p className="font-bold">✔️ 검색 기능:</p>{" "}
-                <p className="sm:ml-6 ml-1">
-                  사용자가 원하는 제품을 쉽게 찾을 수 있도록 지원
-                </p>
               </li>
             </ul>
           </div>

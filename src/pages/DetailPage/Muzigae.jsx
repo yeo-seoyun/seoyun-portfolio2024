@@ -34,7 +34,9 @@ function Muzigae() {
             link="https://muzigae-mansion.vercel.app/"
             githubLink="https://github.com/yeo-seoyun/muzigae-mansion"
             projectImage={safari}
-            description="React와 Vite를 기반으로 Tailwind CSS를 사용하여 반응형 디자인을 구현했습니다. <br /> PocketBase를 통해 실시간 데이터 연동 및 상품 리스트의 동적 구성을 지원합니다. <br /> 주요 기능으로는 상품 목록, 상세 페이지, 검색 및 필터링 기능이 있으며, <br /> 사용자 친화적인 인터페이스를 구현하기 위해 노력했습니다."
+            description="무지개맨션 홈페이지는 현재 메인 페이지만 개발이 완료된 프로젝트로, <br /> 
+            사용자에게 효과적인 첫 인상을 제공하기 위해 디자인되었습니다. <br /> 
+            React, Vite 및 Tailwind CSS를 활용하여 현대적인 웹 디자인 기준과 반응형 기능을 지원하는 사이트를 구현하였습니다."
           />
 
           <div className="w-full border-b"></div>
@@ -43,25 +45,29 @@ function Muzigae() {
             <h2 className="text-2xl sm:text-lg">주요 기능 및 특징</h2>
             <ul className="sm:text-sm">
               <li className="flex sm:flex-col">
-                <p className="font-bold">✔️ 반응형 디자인:</p>{" "}
+                <p className="font-bold">✔️ Tailwind CSS & 반응형 디자인:</p>{" "}
                 <p className="sm:ml-6 ml-1">
                   다양한 디바이스에서 일관된 사용자 경험 제공
                 </p>
               </li>
               <li className="flex sm:flex-col">
-                <p className="font-bold">✔️ 실시간 데이터 연동:</p>{" "}
+                <p className="font-bold">✔️ PocketBase & 실시간 데이터 연동:</p>{" "}
                 <p className="sm:ml-6 ml-1">
                   PocketBase를 통한 최신 상품 정보 제공
                 </p>
               </li>
               <li className="flex sm:flex-col">
-                <p className="font-bold">✔️ 상품 목록 및 상세 페이지:</p>{" "}
-                <p className="sm:ml-6 ml-1">제품 정보의 상세한 제공</p>
+                <p className="font-bold">✔️ 광고 팝업 기능:</p>{" "}
+                <p className="sm:ml-6 ml-1">
+                  사용자에게 중요한 공지나 특별 프로모션을 알리는 광고 팝업을
+                  표시합니다.
+                </p>
               </li>
               <li className="flex sm:flex-col">
-                <p className="font-bold">✔️ 검색 기능:</p>{" "}
+                <p className="font-bold">✔️ 하루 동안 안 보기 기능:</p>{" "}
                 <p className="sm:ml-6 ml-1">
-                  사용자가 원하는 제품을 쉽게 찾을 수 있도록 지원
+                  사용자가 광고 팝업을 하루 동안 보지 않도록 선택할 수 있는
+                  기능을 추가하여 사용자 경험을 개선했습니다.
                 </p>
               </li>
             </ul>

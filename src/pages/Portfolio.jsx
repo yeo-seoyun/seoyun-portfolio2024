@@ -3,7 +3,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { A11y, Keyboard, Navigation, Pagination } from "swiper/modules";
-import { motion } from "framer-motion";
 import PortfolioSlide from "../components/molecule/PortfolioSlide";
 import nonfiction from "../assets/MockUp/nonfiction-mockup.png";
 import mimiworld from "../assets/MockUp/mimi-mockup.png";
@@ -14,21 +13,11 @@ function Portfolio() {
   return (
     <div
       id="portfolio"
-      className="w-full h-screen m-auto md:h-[60vh] sm:h-[55vh]"
+      className="w-full h-screen m-auto md:h-[60vh] sm:h-[60vh]"
     >
       <div className="w-[1280px] h-full flex flex-col m-auto justify-between items-center py-8 px-10 md:w-[768px] sm:w-[320px] sm:px-0">
         <h2 className="text-4xl font-bold sm:text-2xl">PORTFOLIO</h2>
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{
-            ease: "easeInOut",
-            duration: 2,
-            y: { duration: 1 },
-          }}
-          className="w-full h-full"
-        >
+        <div className="w-full h-full">
           <Swiper
             spaceBetween={0}
             slidesPerView={1}
@@ -86,10 +75,10 @@ function Portfolio() {
               />
             </SwiperSlide>
 
-            <div className="swiper-button-prev text-black-100"></div>
-            <div className="swiper-button-next text-black-100"></div>
+            <div className="swiper-button-prev text-black-100 sm:hidden"></div>
+            <div className="swiper-button-next text-black-100 sm:hidden"></div>
           </Swiper>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ function Mimiworld() {
             link="https://mimi-world.netlify.app/"
             githubLink="https://github.com/yeo-seoyun/mimi-world"
             projectImage={safari}
-            description="React와 Vite를 기반으로 Tailwind CSS를 사용하여 반응형 디자인을 구현했습니다. PocketBase를 통해 실시간 데이터 연동 및 상품 리스트의 동적 구성을 지원합니다. 주요 기능으로는 상품 목록, 상세 페이지, 검색 및 필터링 기능이 있으며, 사용자 친화적인 인터페이스를 구현하기 위해 노력했습니다."
+            description="미미월드는 다양한 연령층의 사용자가 접근하는 어린이 장난감 브랜드 웹사이트입니다. <br /> 기존 사이트의 오래된 디자인을 개선하여 보다 모던하고 접근성 높은 인터페이스를 제공하기 위해 리디자인 프로젝트를 진행했습니다."
           />
 
           <div className="w-full border-b"></div>
@@ -43,15 +43,22 @@ function Mimiworld() {
             <h2 className="text-2xl sm:text-lg">주요 기능 및 특징</h2>
             <ul className="sm:text-sm">
               <li className="flex sm:flex-col">
-                <p className="font-bold">✔️ 반응형 디자인:</p>{" "}
+                <p className="font-bold">✔️ React & Vite:</p>{" "}
+                <p className="sm:ml-6 ml-1">
+                  최신 웹 표준에 맞는 신속한 프론트엔드 개발을 가능하게 합니다.
+                </p>
+              </li>
+              <li className="flex sm:flex-col">
+                <p className="font-bold">✔️ Tailwind CSS & 반응형 디자인:</p>{" "}
                 <p className="sm:ml-6 ml-1">
                   다양한 디바이스에서 일관된 사용자 경험 제공
                 </p>
               </li>
               <li className="flex sm:flex-col">
-                <p className="font-bold">✔️ 실시간 데이터 연동:</p>{" "}
+                <p className="font-bold">✔️ PocketBase & 실시간 데이터 연동:</p>{" "}
                 <p className="sm:ml-6 ml-1">
-                  PocketBase를 통한 최신 상품 정보 제공
+                  실시간 데이터 연동을 통해 사용자에게 최신 상품 정보를
+                  제공합니다.
                 </p>
               </li>
               <li className="flex sm:flex-col">
