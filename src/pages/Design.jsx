@@ -2,7 +2,6 @@ import sylogo from "../assets/MockUp/seoyunlogo.webp";
 import muzigae from "../assets/MockUp/muzigae.webp";
 import dalba from "../assets/MockUp/dalba.webp";
 import bluesquare from "../assets/MockUp/bluesquare.webp";
-import DesignCard from "../components/molecule/DesignCard";
 import PortfolioContent from "../components/molecule/PortfolioContent";
 
 function Design() {
