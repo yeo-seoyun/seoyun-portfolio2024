@@ -15,7 +15,6 @@ const navigationItems = [
     index: true,
     text: "홈",
     element: <Home />,
-    // lazy: () => import("@/pages/Home"),
   },
   {
     id: "nonfiction",

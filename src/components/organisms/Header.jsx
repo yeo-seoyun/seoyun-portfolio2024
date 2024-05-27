@@ -27,8 +27,8 @@ function Header() {
           <a href="#portfolio" className="hover:text-purple-100 transition-all">
             PORTFOLIO
           </a>
-          <a href="#design" className="hover:text-purple-100 transition-all">
-            DESIGN
+          <a href="#footer" className="hover:text-purple-100 transition-all">
+            CONTACT
           </a>
         </div>
       )}
