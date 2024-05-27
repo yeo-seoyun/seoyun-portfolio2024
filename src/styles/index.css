@@ -10,7 +10,10 @@
   line-height: 1.5;
   font-weight: 400;
   user-select: none;
+}
 
+body, a, button, input, textarea, select {
+  cursor: none; 
 }
 
 /* scrollbar */
