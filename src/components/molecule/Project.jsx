@@ -23,7 +23,7 @@ function Project({ title, contribution, skills, link, githubLink }) {
           </div>
         </div>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-4">
         <DetailLink to={link}>홈페이지 바로가기</DetailLink>
         <DetailLink to={githubLink}>GitHub</DetailLink>
       </div>
