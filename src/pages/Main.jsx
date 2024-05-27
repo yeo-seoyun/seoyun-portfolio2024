@@ -7,17 +7,33 @@ import { motion, useViewportScroll, useTransform } from "framer-motion";
 function Main() {
   const { scrollYProgress } = useViewportScroll(); // 스크롤 진행 상태
   const [currentImage, setCurrentImage] = useState(avatar);
+  const [isInView, setIsInView] = useState(true); // 애니메이션 상태
   const opacity = useTransform(scrollYProgress, [0, 0.25], [1, 0.1]); // opacity를 스크롤 위치에 따라 조정
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((currentImage) =>
-        currentImage === avatar ? avatar2 : avatar
-      );
+      if (isInView) {
+        setCurrentImage((currentImage) =>
+          currentImage === avatar ? avatar2 : avatar
+        );
+      }
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [isInView]);
+
+  useEffect(() => {
+    const checkScroll = () => {
+      const progress = scrollYProgress.get(); // 현재 스크롤 진행 상태 가져오기
+      setIsInView(progress <= 0.25);
+    };
+
+    const unsubscribe = scrollYProgress.onChange(checkScroll);
+
+    return () => {
+      unsubscribe();
+    };
+  }, [scrollYProgress]);
 
   return (
     <>
