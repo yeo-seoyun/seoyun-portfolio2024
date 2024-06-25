@@ -60,10 +60,12 @@ function AboutMe() {
                   여서윤 <span className="text-sm">YeoSeoYun</span>
                 </h2>
                 <p>
-                  안녕하세요!🥰 <br /> 신입 웹 퍼블리셔 &amp; 프론트엔드 개발자
+                  안녕하세요!🥰 <br /> 신입 웹 퍼블리셔 &amp; 프론트엔드 개발자{" "}
                   여서윤입니다. <br />
-                  모든 사용자가 웹사이트를 편리하게 사용할 수 있도록 <br /> 웹
-                  표준과 웹 접근성을 준수하는 작업을 위해 노력합니다.
+                  모든 사용자가 웹사이트를 편리하게 사용할 수 있도록 <br />{" "}
+                  <span className="bg-yellow-100">웹 표준</span>과{" "}
+                  <span className="bg-yellow-100">웹 접근성</span>을 준수하는
+                  작업을 위해 노력합니다.
                 </p>
                 <p>
                   팀과 함께 협력하며 같이 성장하는 <br /> 웹 퍼블리셔 &amp;
